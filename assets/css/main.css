@@ -42,8 +42,9 @@ html{
 
 
 #main{
+    height: 100%;
+    width: 100%;
     clear: both;
-    background-color: #fff;
 }
 .header__background{
     background-image:linear-gradient(0,#3d185b,#1f0c2f) ;
@@ -56,10 +57,8 @@ html{
 
 #header{
     height:var(--header-height);
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
     top: 0;
 
 }
@@ -216,7 +215,7 @@ html{
 
 #content{
     background-color: #000;
-    height: auto;
+    height: 100%;
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -233,12 +232,12 @@ html{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 640px;
+    max-height: 640px;
 }
 .big-banner a {
     width: 100%;
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 auto;
 }
 .big-banner img{
@@ -417,11 +416,11 @@ html{
     border-radius: 10px;
 }
 .box3{
-    height: 1400px;
-    background-image:linear-gradient(0,#d8dde3,#000) ;
+    min-height: 1400px;
+    background-image:linear-gradient(#000,#d8dde3,#fff) ;
 }
 .product{
-    
+    margin-right: -30px;
 }
 .about__product{
     display: flex;
@@ -435,17 +434,40 @@ html{
     width: 14%;
     align-items: center;
     text-align: center;
-    margin: 10px 16px;
+    margin: 5px 16px;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(32, 12, 48, 1);
 }
 
 .product__background img{
-    max-width: 175px;
+    width: 90%;
+    border-radius: 20px;
+
+}
+.product__background button{
+    font-size: 18px;
+    border: none;
+    background-color: #edca00;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 30px;
 }
 .product__name{
-
+    max-width: 200px;
+    text-align: center;
+    font-size: 18px;
+    margin:0 auto;
+    font-weight: 600;  
+    max-width: 200px;
+    text-align: center;
+    margin:0 auto;
+    font-weight: 600;
 }
 .product__price{
-
+    color: #1f0c2f;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
@@ -454,3 +476,10 @@ html{
 #footer{
     height: 200px;
     background-color: #fff;
+}
+.info__school{
+    margin-top: 40px;
+    text-align: center;
+    color: #1f0c2f;
+    font-size: 14px;
+}

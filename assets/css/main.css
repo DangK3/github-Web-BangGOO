@@ -1,7 +1,7 @@
 :root{
     --white-color: #fff;
     --black-color:#000;
-    --text-color: #ccc;
+    --text-color: #d8dde3;
     --container-height:70px;
     --header-height: 120px;
     --nav-height: calc(var(--header-height)-var(--container-height));
@@ -9,6 +9,8 @@
 }
 *{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 html{
     font-size: 62.5%;
@@ -114,10 +116,11 @@ html{
 }
 .container__logoBanggoo{
     flex: 1;
-    max-width: 162px;
+    min-width: 180px;
     width: 100%;
     display: flex;
     align-items: center;
+    padding-top: 16px;
 }
 .container__logoBanggoo a{
     margin-top: -6px;
@@ -186,6 +189,7 @@ html{
     flex: 1;
     justify-content: center;
     align-items: center;
+    padding-top: 16px;
     width: 150px;
 }
 
@@ -221,6 +225,39 @@ html{
     padding: 30px;
     margin-top: 50px;
 }
+
+.layout-left{
+    background-image:var(--color-web);
+    height: 640px;
+    width: 170px;
+    position: fixed;
+    z-index: 3;
+}
+
+.layout-left__header{
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.8;
+    border-top: #6d7074 1px  solid;
+    border-bottom: #6d7074 1px  solid;
+    padding: 10px 0;
+}
+.layout-left__header p{
+}
+
+.layout-left__content{
+    list-style-type: none;
+}
+.layout-left__content a{
+    color: #d8dde3;
+    font-size: 18px;
+    text-decoration: none;
+    width: 170px !important;
+}
+
+
+
 
 
 #content{
@@ -315,7 +352,6 @@ html{
     text-shadow: #948845 -6px 4px;
 }
 
-
 .box1__product{
     width: 1100px;
     margin: 0 auto;
@@ -347,7 +383,7 @@ html{
     max-width: 200px;
     text-align: center;
     font-size: 16px;
-    margin:0 auto;
+    margin:12px auto;
     font-weight: 600;
 }
 .box1 .des__name{
@@ -362,7 +398,9 @@ html{
 .box1 .des__price{
     color: #3d185b;
 }
-
+.des__price{
+    margin: 10px 0;
+}
 .box1 .des__buy{
     color: #ffffff;
 }
@@ -435,8 +473,7 @@ html{
     min-height: 1400px;
     background-image:linear-gradient(#000,#d8dde3,#fff) ;
 }
-.product{
-}
+
 .about__product{
     display: flex;
     flex-wrap: wrap;
@@ -450,8 +487,9 @@ html{
     width: 15%;
     align-items: center;
     text-align: center;
-    margin: 5px 10px;
+    margin: 5px 4px;
     padding: 20px 0;
+    border: #3d185b 3px solid;
     box-shadow: 0 4px 10px rgba(32, 12, 48, 1);
 }
 
@@ -468,6 +506,7 @@ html{
     cursor: pointer;
     font-weight: 600;
     border-radius: 30px;
+    margin: 10px 0;
 }
 .product__background button:hover{
     opacity: 0.7;
@@ -476,7 +515,7 @@ html{
     max-width: 200px;
     text-align: center;
     font-size: 18px;
-    margin:0 auto;
+    margin:10px auto;
     font-weight: 600;  
     max-width: 200px;
     text-align: center;

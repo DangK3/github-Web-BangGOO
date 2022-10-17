@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./assets/fonts/Roboto/LICENSE.txt">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./effect.js">
+    <!-- <link rel="stylesheet" href="./assets/css/styles_login.css"> -->
     <link rel="stylesheet" href="./assets/css/respon.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
@@ -51,15 +53,15 @@
                         </li>
                         <li><a href=""><i class="ti-help ma_lr6"></i>Hỗ Trợ</a></li>
                         <li class="ma_lr8"><a href=""><i class="ti-world ma_lr6"></i>Tiếng Việt <i class="ti-angle-down ma_lr8"></i></a></li>
-                        <li ><a href="">Đăng ký</a></li>
-                        <li class="ma_lr8"><a href="" class="pd_lr8 ma_lr6">Đăng Nhập</a></li>
+                        <li ><a href="register.html">Đăng ký</a></li>
+                        <li class="ma_lr8"><a href="login.html" class="pd_lr8 ma_lr6">Đăng Nhập</a></li>
                     </ul>
                 </div>
                 <!-- NAV 2 -->
                 <div class="container white-font">
                     <div class="container__logoBanggoo">
-                        <button id="container__btn" class="color-font ti-menu"></button>
-                        <a href=""></button>BangGOO</a>
+                        <button class="container__btn color-font ti-menu"></button>
+                        <a href="">BangGOO</a>
                     </div>
                     
                     <div class="container__search">
@@ -90,306 +92,309 @@
                 </div>
             </div>
         </div>
-        <div class="layout-left">
-            <p class="layout-left__header">
-                Series
-            </p>
-            <ul class="layout-left__content">
-                <li><a href="">Apple</a></li>
-                <li><a href="">SamSung</a></li>
-                <li><a href="">Oppo</a></li>
-                <li><a href="">Xiaomi</a></li>
-                <li><a href="">Vivo</a></li>
-                <li><a href="">Pixel</a></li>
-                <li><a href="">Asus</a></li>
-            </ul>
-        </div>
-        <div id="content">
-            <!-- begin img and san sales  -->
-            <div class="big-banner">
-                <div class="event">
-                    <div class="img">
-                        <a href="#"><img src="./assets/img/near_header/ip14.png" alt="Reno8 Pro5G"></a>
+            <div class="layout-left">
+                <p class="layout-left__header">
+                    Series
+                </p>
+                <ul class="layout-left__content">
+                    <li><a href="">Apple</a></li>
+                    <li><a href="">SamSung</a></li>
+                    <li><a href="">Oppo</a></li>
+                    <li><a href="">Xiaomi</a></li>
+                    <li><a href="">Vivo</a></li>
+                    <li><a href="">Pixel</a></li>
+                    <li><a href="">Asus</a></li>
+                </ul>
+            </div>
+            <div id="content" class="content__h">
+                    <!-- begin img and san sales  -->
+                    <div class="big-banner">
+                        <div class="event">
+                            <div class="img">
+                                <a href="#"><img src="./assets/img/near_header/ip14.png" alt="Reno8 Pro5G"></a>
+                            </div>
+                        </div>
+        
                     </div>
-                </div>
+                    <div class="box box1">
+                        <div class="box1__title">
+                            <p>HOT PRODUCTS</p>
+                        </div>
+                        <!-- product -->
+                        <div class="box1__product">
+                            <!-- IP14PM -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/flagship/ip14-pro-max.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple iPhone 14 Pro Max</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 49.429.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- Samsung ZFold4 -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                   <a href=""> <img src="./assets/img/flagship/samsung_galaxy_z_fold_4-6_1.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Samsung Galaxy Z Fold4</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 45.490.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div> 
+                            <!--Oppo FindX5pro  -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/flagship/oppo.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Oppo Find X5 PRO 5G</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 36.290.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- s22Ultra -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                   <a href=""> <img src="./assets/img/flagship/samsung_s22_ultra.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Samsung Galaxy S22 Ultra</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 32.590.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+        
+                            <!-- Pixel 7 Pro -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                   <a href=""> <img src="./assets/img/flagship/pixel-7.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Pixel 7 Pro</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 26.390.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!--Xiaomi 12S Ultra  -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/flagship/xiaomi.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Xiaomi 12S Ultra</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 26.590.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            
+                            <!-- Vivo X80 Pro -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/flagship/vivo.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Vivo X80 Pro</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 26.990.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            
+                            <!-- Rog phone 6 -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/flagship/asus-rog-phone-6.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>ASUS ROG Phone 6</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 24.990.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="sec-banner">
+                        <img src="./assets/img/near_header/lenses__fvjzun38amai_large.jpg" alt="">
+                    </div>
+                    <div class="box box2">
+                        <div class="box1__title">
+                            <p>SERIES IPHONE</p>
+                        </div>
+                        <!-- product -->
+                        <div class="box1__product">
+                            <!-- IP14PM -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/Ip_series/ip14-pro-max.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple iPhone 14 Pro Max</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 49.429.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- IP14Pro -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                   <a href=""> <img src="./assets/img/Ip_series/iphone-14-pro.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple IPhone 14 Pro</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 44.590.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- 13PM -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/Ip_series/iphone-13-pro-max.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple IPhone 13 Pro Max</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 37.490.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- IP14PLus -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                   <a href=""> <img src="./assets/img/Ip_series/iPhone-14-plus.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple IPhone 14 Plus</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 35.990.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- IP13Pro -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/Ip_series/iphone-13-pro.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple IPhone 13 Pro</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 33.990.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- IP14 -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/Ip_series/iPhone-14.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple IPhone 14</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 31.990.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- IP13 -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                   <a href=""> <img src="./assets/img/Ip_series/iphone-13.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple IPhone 13</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 26.490.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+                            <!-- IP13mini -->
+                            <div class="product__inside">
+                                <div class="product__img">
+                                    <a href=""><img src="./assets/img/Ip_series/iphone-13-mini.png" alt="" class="phone"></a>
+                                </div>
+                                <div class="product__descrip">
+                                    <div class="des__name">
+                                        <p>Apple IPhone 13 Mini</p>
+                                    </div>
+                                    <div class="des__price">
+                                        <p>Giá: 23.990.000đ</p>
+                                    </div>
+                                </div>
+                                <button class="des__buy">Thêm sản phẩm</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="commit">
+                        <div class="commit__img1">
+                            <a class="line1" href=""><img src="./assets/img/disco/mid1.png" alt=""></a>
+                            <a class="line1" href=""><img src="./assets/img/disco/mid2.png" alt=""></a>
+                        </div>
+                        <div class="commit__img2">
+                            <a class="line2" href=""><img src="./assets/img/disco/mid3.png" alt=""></a>
+                            <a class="line2 ma_lr6" href=""><img src="./assets/img/disco/mid4.png" alt=""></a>
+                            <a class="line2" href=""><img src="./assets/img/disco/mid5.png" alt=""></a>
+                        </div>
+                    </div>
+            </div>
+ 
 
-            </div>
-            <div class="box box1">
-                <div class="box1__title">
-                    <p>HOT PRODUCTS</p>
-                </div>
-                <!-- product -->
-                <div class="box1__product">
-                    <!-- IP14PM -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/flagship/ip14-pro-max.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple iPhone 14 Pro Max</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 49.429.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- Samsung ZFold4 -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                           <a href=""> <img src="./assets/img/flagship/samsung_galaxy_z_fold_4-6_1.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Samsung Galaxy Z Fold4</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 45.490.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div> 
-                    <!--Oppo FindX5pro  -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/flagship/oppo.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Oppo Find X5 PRO 5G</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 36.290.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- s22Ultra -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                           <a href=""> <img src="./assets/img/flagship/samsung_s22_ultra.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Samsung Galaxy S22 Ultra</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 32.590.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
 
-                    <!-- Pixel 7 Pro -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                           <a href=""> <img src="./assets/img/flagship/pixel-7.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Pixel 7 Pro</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 26.390.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!--Xiaomi 12S Ultra  -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/flagship/xiaomi.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Xiaomi 12S Ultra</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 26.590.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    
-                    <!-- Vivo X80 Pro -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/flagship/vivo.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Vivo X80 Pro</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 26.990.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    
-                    <!-- Rog phone 6 -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/flagship/asus-rog-phone-6.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>ASUS ROG Phone 6</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 24.990.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="sec-banner">
-                <img src="./assets/img/near_header/lenses__fvjzun38amai_large.jpg" alt="">
-            </div>
-            <div class="box box2">
-                <div class="box1__title">
-                    <p>SERIES IPHONE</p>
-                </div>
-                <!-- product -->
-                <div class="box1__product">
-                    <!-- IP14PM -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/Ip_series/ip14-pro-max.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple iPhone 14 Pro Max</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 49.429.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- IP14Pro -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                           <a href=""> <img src="./assets/img/Ip_series/iphone-14-pro.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple IPhone 14 Pro</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 44.590.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- 13PM -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/Ip_series/iphone-13-pro-max.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple IPhone 13 Pro Max</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 37.490.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- IP14PLus -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                           <a href=""> <img src="./assets/img/Ip_series/iPhone-14-plus.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple IPhone 14 Plus</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 35.990.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- IP13Pro -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/Ip_series/iphone-13-pro.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple IPhone 13 Pro</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 33.990.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- IP14 -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/Ip_series/iPhone-14.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple IPhone 14</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 31.990.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- IP13 -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                           <a href=""> <img src="./assets/img/Ip_series/iphone-13.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple IPhone 13</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 26.490.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-                    <!-- IP13mini -->
-                    <div class="product__inside">
-                        <div class="product__img">
-                            <a href=""><img src="./assets/img/Ip_series/iphone-13-mini.png" alt="" class="phone"></a>
-                        </div>
-                        <div class="product__descrip">
-                            <div class="des__name">
-                                <p>Apple IPhone 13 Mini</p>
-                            </div>
-                            <div class="des__price">
-                                <p>Giá: 23.990.000đ</p>
-                            </div>
-                        </div>
-                        <button class="des__buy">Thêm sản phẩm</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="commit">
-                <div class="commit__img1">
-                    <a class="line1" href=""><img src="./assets/img/disco/mid1.png" alt=""></a>
-                    <a class="line1" href=""><img src="./assets/img/disco/mid2.png" alt=""></a>
-                </div>
-                <div class="commit__img2">
-                    <a class="line2" href=""><img src="./assets/img/disco/mid3.png" alt=""></a>
-                    <a class="line2 ma_lr6" href=""><img src="./assets/img/disco/mid4.png" alt=""></a>
-                    <a class="line2" href=""><img src="./assets/img/disco/mid5.png" alt=""></a>
-                </div>
-            </div>
-        </div>
         <div id="about">
             <div class="box3">
                 <div class="accessory">

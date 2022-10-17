@@ -30,7 +30,7 @@ html{
     font-size: 13px;
 }
 .color-font{
-    color: #d8dde3 !important ;
+    color: #d8dde3 ;
 }
 .ma_lr8{
     margin: 0 8px;
@@ -41,7 +41,9 @@ html{
 .pd_lr8{
     padding: 0 8px;
 }
-
+.linear{
+    transition: linear 0.5s;
+}
 
 #main{
     height: 100%;
@@ -79,12 +81,17 @@ html{
     position: absolute;
     margin-top: 2px;
 }
+.nav__seller li,
+.nav__account li{
+    transition: linear .2s;
+
+}
 .nav__seller li:hover,
 .nav__account li:hover {
     opacity: 0.7;
 }
 .nav a{
-
+    
     color: #d8dde3;
     text-decoration: none;
 }
@@ -116,7 +123,7 @@ html{
 }
 .container__logoBanggoo{
     flex: 1;
-    min-width: 180px;
+    min-width: 200px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -134,18 +141,24 @@ html{
     border-radius: 5px;
     cursor: pointer;
     height: 40px;
-    width: 60px;
+    width: 50px;
     font-size: 20px;
     text-align: center;
     color: #ccc;
     align-items: center;
     background-image:linear-gradient(0,#63437e,#3b294a) ;
-
+    margin-left: 10px;
+    margin-right: 14px;
+    transition: linear 0.3s;
+    font-weight: 600;
     /* background-color: var(--black-color);   */
     /* padding-right: 14px; */
 }
 .ti-menu:hover{
-    opacity: 0.7;
+    color: #ffffff !important;
+
+    background-image:linear-gradient(0,#3b294a,#63437e) ;
+
 }
 .container__search{
     margin-left: 20px;
@@ -164,7 +177,6 @@ html{
     color: rgba(0, 0, 0, 0.8);
 }
 .container__form{
-    /* position: relative; */
     display: flex;
     border-radius: 4px;
     background-color: #fff;
@@ -179,12 +191,11 @@ html{
     margin-top: 3px;
     margin-right: 3px;
     cursor: pointer;
+    transition: linear .2s;
 }
 .btn-search i{
-    /* position: flex; */
     color: #d8dde3;
     font-size: 18px;
-    /* padding: 7px 24px; */
     text-decoration: none;
     line-height: 1.4;
 }
@@ -238,39 +249,9 @@ html{
     margin-top: 50px;
 }
 
-.layout-left{
-    background-image:var(--color-web);
-    height: 640px;
-    width: 170px;
-    position: fixed;
-    z-index: 3;
+.content__h.expand{
+    width: 100%;
 }
-
-.layout-left__header{
-    color: var(--text-color);
-    font-size: 20px;
-    text-align: center;
-    opacity: 0.8;
-    border-top: #6d7074 1px  solid;
-    border-bottom: #6d7074 1px  solid;
-    padding: 10px 0;
-}
-.layout-left__header p{
-}
-
-.layout-left__content{
-    list-style-type: none;
-}
-.layout-left__content a{
-    color: #d8dde3;
-    font-size: 18px;
-    text-decoration: none;
-    width: 170px !important;
-}
-
-
-
-
 
 #content{
     background-color: #000;
@@ -279,10 +260,10 @@ html{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    clear: both;
+    clear: both; 
     /* background: url('/assets/img/near_header/100k.png')  center top / 100% no-repeat;
     min-width: 1200px;
-    padding-bottom: 0px; */
+    padding-bottom: 0px;*/
 }
 .big-banner{
     text-align: center;
@@ -312,8 +293,7 @@ html{
 
 .product__inside:hover .phone{
     transform: translate(-3.5rem, -2.5rem) rotate(-10deg);
-    transition: .3s;
-    transition-delay: .2s;
+    transition:.3s;
 }
 
 
@@ -414,16 +394,20 @@ html{
     margin: 10px 0;
 }
 .box1 .des__buy{
+    font-weight: 600;
     color: #ffffff;
+    box-shadow: rgba(22, 31, 13, 0.8) 6px 4px ;
 }
 
 .box2 .des__buy{
+    font-weight: 600;
     color: #ffd900;
+    box-shadow:rgba(18, 1, 19, 0.8) 6px 4px ;
 }
 
 .des__buy{
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     cursor: pointer;
     border: none;
     text-align: center;
@@ -435,10 +419,15 @@ html{
     height: 28px;
     border-radius: 5px;
     border: #1f0c2f 3px solid;
-    box-shadow: rgba(22, 31, 13, 0.8) 6px 4px ;
+    transition: linear 0.3s;
 }
-.des__buy:hover{
-    opacity: 0.7;
+.box1 .des__buy:hover{
+    color: #c40808;
+    background-color: #e6caca;
+}
+.box2 .des__buy:hover{
+    color: #c40808;
+    background-color: #ffd900;
 }
 .commit{
     display: flex;
@@ -519,9 +508,11 @@ html{
     font-weight: 600;
     border-radius: 30px;
     margin: 10px 0;
+    transition: .5s;
 }
 .product__background button:hover{
-    opacity: 0.7;
+    background-color:#3d185b;
+    color: #fff;
 }
 .product__name{
     max-width: 200px;
@@ -547,9 +538,53 @@ html{
     height: 200px;
     background-color: #fff;
 }
+#footer p{
+    margin: 12px 0;
+}
 .info__school{
     margin-top: 40px;
     text-align: center;
     color: #1f0c2f;
     font-size: 14px;
 }
+
+
+.layout-left.hide{
+    width: 0;
+
+}
+
+
+.layout-left{
+    /* display: none; */
+    background-image:linear-gradient(0,#593956,#3d185b) ;
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    z-index: 3;
+    transition: ease-in-out .5s;
+}
+
+.layout-left__header{
+    color: var(--text-color);
+    font-size: 20px;
+    opacity: 0.7;
+    border-top: #6d7074 1px  solid;
+    border-bottom: #6d7074 1px  solid;
+    padding: 10px 0;
+    padding-left: 40px;
+}
+.layout-left__header p{
+}
+
+.layout-left__content{
+    list-style-type: none;
+}
+.layout-left__content a{
+    color: #d8dde3;
+    font-size: 18px;
+    text-decoration: none;
+    width: 170px !important;
+}
+
+
